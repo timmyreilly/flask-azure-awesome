@@ -15,3 +15,12 @@ def home():
         title='Home Page',
         year=datetime.now().year,
     )
+    
+    
+@app.route('/awesome')
+def awesome():
+    """Renders awesome"""
+    return render_template(
+        'awesome.html',
+        title='AWESOME',
+    )
